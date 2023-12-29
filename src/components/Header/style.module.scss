@@ -10,7 +10,8 @@
     font-weight: 300;
     box-sizing: border-box;
     align-items: center;
-    
+    font-weight: bolder;
+
     .logo{
         display: flex;
         cursor: pointer;
@@ -47,11 +48,11 @@
                 .codeBy{
                     transform: translateX(-100%);
                 }
-                .dennis{
+                .firstName{
                     transform: translateX(-65px);
                 }
-                .snellenberg{
-                    transform: translateX(-65px);
+                .lastName{
+                    transform: translateX(-85px);
                 }
             }
         }
@@ -87,7 +88,7 @@
         a{
             cursor: pointer;
         }
-    } 
+    }
 }
 .headerButtonContainer{
     transform: scale(0);
@@ -107,7 +108,7 @@
         align-items: center;
         justify-content: center;
     }
-    
+
     .burger{
         width: 100%;
         position: relative;
@@ -122,28 +123,28 @@
             position: relative;
             transition: transform 0.3s;
         }
-    
+
         &::after{
             top: -5px;
         }
-    
+
         &::before{
             top: 5px;
         }
     }
-    
+
     .burgerActive{
-    
+
         &::after{
             transform: rotate(45deg);
             top: -1px;
         }
-    
+
         &::before{
             transform: rotate(-45deg);
             top: 0px;
         }
-        
+
     }
 }
 

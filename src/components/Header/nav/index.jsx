@@ -10,33 +10,34 @@ import Footer from './Footer';
 const navItems = [
   {
     title: "Home",
-    href: "/",
+    href: "",
   },
   {
     title: "Work",
-    href: "/work",
+    href: "#work",
   },
   {
     title: "About",
-    href: "/about",
+    href: "#about",
   },
   {
     title: "Contact",
-    href: "/contact",
+    href: "#contact",
   },
 ]
 
-export default function index() {
+export default function index({closeMenu}) {
 
   const pathname = usePathname();
   const [selectedIndicator, setSelectedIndicator] = useState(pathname);
 
+
   return (
-    <motion.div 
-      variants={menuSlide} 
-      initial="initial" 
-      animate="enter" 
-      exit="exit" 
+    <motion.div
+      variants={menuSlide}
+      initial="initial"
+      animate="enter"
+      exit="exit"
       className={styles.menu}
       >
        <div className={styles.body}>
@@ -46,16 +47,16 @@ export default function index() {
                     </div>
                     {
                       navItems.map( (data, index) => {
-                        return <Link 
-                        key={index} 
-                        data={{...data, index}} 
-                        isActive={selectedIndicator == data.href} 
+                        return <Link
+                        key={index}
+                        data={{...data, index, closeMenu}}
+                        isActive={selectedIndicator == data.href}
                         setSelectedIndicator={setSelectedIndicator}>
                         </Link>
                       })
                     }
             </div>
-            <Footer />
+            {/* <Footer /> */}
         </div>
         <Curve />
     </motion.div>

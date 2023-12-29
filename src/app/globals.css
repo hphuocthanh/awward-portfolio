@@ -1,6 +1,11 @@
+body {
+	margin: 0px;
+	overflow: hidden; /* Hide scrollbars */
+	cursor: wait;
+	scroll-behavior: smooth;
+}
 
-body{
-    margin: 0px;
-    overflow: hidden; /* Hide scrollbars */
-    cursor: wait;
+a {
+	text-decoration: none;
+	color: currentColor;
 }

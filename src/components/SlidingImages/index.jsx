@@ -10,34 +10,34 @@ const slider1 = [
     },
     {
         color: "#d6d7dc",
-        src: "decimal.jpg"
+        src: "project_blank.jpg"
     },
     {
         color: "#e3e3e3",
-        src: "funny.jpg"
+        src: "project_blank.jpg"
     },
     {
         color: "#21242b",
-        src: "google.jpg"
+        src: "project_blank.jpg"
     }
 ]
 
 const slider2 = [
     {
         color: "#d4e3ec",
-        src: "maven.jpg"
+        src: "project_blank.jpg"
     },
     {
         color: "#e5e0e1",
-        src: "panda.jpg"
+        src: "project_blank.jpg"
     },
     {
         color: "#d7d4cf",
-        src: "powell.jpg"
+        src: "project_blank.jpg"
     },
     {
         color: "#e1dad6",
-        src: "wix.jpg"
+        src: "project_blank.jpg"
     }
 ]
 
@@ -60,7 +60,7 @@ export default function index() {
                         slider1.map( (project, index) => {
                             return <div key={index} className={styles.project} style={{backgroundColor: project.color}} >
                                 <div className={styles.imageContainer}>
-                                    <Image 
+                                    <Image
                                     fill={true}
                                     alt={"image"}
                                     src={`/images/${project.src}`}/>
@@ -74,7 +74,7 @@ export default function index() {
                         slider2.map( (project, index) => {
                             return <div key={index} className={styles.project} style={{backgroundColor: project.color}} >
                                 <div key={index} className={styles.imageContainer}>
-                                    <Image 
+                                    <Image
                                     fill={true}
                                     alt={"image"}
                                     src={`/images/${project.src}`}/>

@@ -1,9 +1,10 @@
 .description{
     padding-left: 200px;
     padding-right: 200px;
-    margin-top: 200px;
+    padding-top: 200px;
     display: flex;
     justify-content: center;
+    height: 70vh;
     .body{
         max-width: 1400px;
         display: flex;
@@ -31,8 +32,8 @@
             }
         }
         .button{
-            top: 80%;
-            left: calc(100% - 200px); 
+            top: 40%;
+            left: calc(100% - 200px);
             width: 180px;
             height: 180px;
             background-color: #1C1D20;
